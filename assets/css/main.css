@@ -2301,6 +2301,8 @@ input, select, textarea {
 		padding: 1.5em 0 1.5em 0;
 		z-index: 1;
 		overflow: hidden;
+		font-weight: bold;
+		
 	}
 
 		#nav > ul {
