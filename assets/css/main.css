@@ -2060,7 +2060,7 @@ input, select, textarea {
 		position: relative;
 		display: inline-block;
 /*		background: #64686C;*/
-        background: #6451B1;
+        background: #20B2AA;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2078,8 +2078,8 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			color: #fff;
-/*			background: #ef8376;*/
-            background:#7F4880
+			background: #008B8B;
+/*            background:#7F4880*/
 		}
 
 		input[type="button"].alt,
