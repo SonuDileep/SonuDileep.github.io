@@ -43,12 +43,11 @@
       }
     </style>
     <script>
-      // This example requires the Visualization library. Include the libraries=visualization
-      // parameter when you first load the API. For example:
-      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization">
+
       let map, heatmap;
 
       function initMap() {
+
         map = new google.maps.Map(document.getElementById("map"), {
           zoom: 18,
           center: { lat: 40.175407, lng: -104.845434 },
@@ -58,6 +57,7 @@
           data: getPoints(),
           map: map,
         });
+        heatmap.set("radius", heatmap.get("radius") ? null : 30);
       }
 
       function toggleHeatmap() {
@@ -85,7 +85,7 @@
       }
 
       function changeRadius() {
-        heatmap.set("radius", heatmap.get("radius") ? null : 20);
+        heatmap.set("radius", heatmap.get("radius") ? null : 40);
       }
 
       function changeOpacity() {
@@ -98,7 +98,9 @@
           new google.maps.LatLng(40.175407, -104.845434),
           new google.maps.LatLng(40.175707, -104.845534),
           new google.maps.LatLng(40.175907, -104.845934),
-
+            new google.maps.LatLng(40.176407, -104.846434),
+            new google.maps.LatLng(40.176707, -104.846534),
+            new google.maps.LatLng(40.176907, -104.846934),
  
 
         ];
@@ -108,15 +110,15 @@
   <body>
     <div id="floating-panel">
       <button onclick="toggleHeatmap()">Toggle Heatmap</button>
-      <button onclick="changeGradient()">Change gradient</button>
-      <button onclick="changeRadius()">Change radius</button>
-      <button onclick="changeOpacity()">Change opacity</button>
+<!--      <button onclick="changeGradient()">Change gradient</button>-->
+<!--      <button onclick="changeRadius()">Change radius</button>-->
+<!--      <button onclick="changeOpacity()">Change opacity</button>-->
     </div>
     <div id="map"></div>
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcIdTySx24apmPWcQHrR-wOyhQkOnSyOE&callback=initMap&libraries=visualization&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr_UKdWi7zKkXoSObtJ2R07R-H49BnupY&callback=initMap&libraries=visualization&v=weekly"
       async
     ></script>
   </body>
