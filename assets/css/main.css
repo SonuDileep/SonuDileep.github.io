@@ -2059,8 +2059,8 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #64686C;
-/*        background: #20B2AA;*/
+		background: #008B8B;
+/*        background: #64686C;*/
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2069,7 +2069,7 @@ input, select, textarea {
 		border: 0;
 		cursor: pointer;
 		outline: 0;
-		font-weight: 300;
+		font-weight: 700;
 	}
 
 		input[type="button"]:hover,
