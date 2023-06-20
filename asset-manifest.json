@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/SonuDileep.github.io/static/css/main.bd76b6e5.css",
-    "main.js": "/SonuDileep.github.io/static/js/main.8dd4376c.js",
-    "static/media/Charlestown-Pizza.png": "/SonuDileep.github.io/static/media/Charlestown-Pizza.b014158f9b26c5b5b0e9.png",
-    "static/media/Gridlinesbuilders.png": "/SonuDileep.github.io/static/media/Gridlinesbuilders.b1ae9a07030baae69f63.png",
-    "static/media/RT_1.png": "/SonuDileep.github.io/static/media/RT_1.ddf9f3c6c06c3018a617.png",
-    "static/media/Quicksand-VariableFont_wght.ttf": "/SonuDileep.github.io/static/media/Quicksand-VariableFont_wght.cf52df73d8529b4815ed.ttf",
-    "static/media/web-removebg-preview.png": "/SonuDileep.github.io/static/media/web-removebg-preview.9fed7f1d0b7ca01038fd.png",
-    "static/media/FA_1.png": "/SonuDileep.github.io/static/media/FA_1.91157e4814d5687e740d.png",
-    "static/media/todolist.png": "/SonuDileep.github.io/static/media/todolist.13858f78acbb5bec224e.png",
-    "static/media/windblade.png": "/SonuDileep.github.io/static/media/windblade.ee76d166e0f27ec8018d.png",
-    "index.html": "/SonuDileep.github.io/index.html",
-    "main.bd76b6e5.css.map": "/SonuDileep.github.io/static/css/main.bd76b6e5.css.map",
-    "main.8dd4376c.js.map": "/SonuDileep.github.io/static/js/main.8dd4376c.js.map"
+    "main.css": "/static/css/main.c4da3ee6.css",
+    "main.js": "/static/js/main.ec28cf13.js",
+    "static/media/Charlestown-Pizza.png": "/static/media/Charlestown-Pizza.b014158f9b26c5b5b0e9.png",
+    "static/media/Gridlinesbuilders.png": "/static/media/Gridlinesbuilders.b1ae9a07030baae69f63.png",
+    "static/media/RT_1.png": "/static/media/RT_1.ddf9f3c6c06c3018a617.png",
+    "static/media/Quicksand-VariableFont_wght.ttf": "/static/media/Quicksand-VariableFont_wght.cf52df73d8529b4815ed.ttf",
+    "static/media/web-removebg-preview.png": "/static/media/web-removebg-preview.9fed7f1d0b7ca01038fd.png",
+    "static/media/FA_1.png": "/static/media/FA_1.91157e4814d5687e740d.png",
+    "static/media/todolist.png": "/static/media/todolist.13858f78acbb5bec224e.png",
+    "static/media/windblade.png": "/static/media/windblade.ee76d166e0f27ec8018d.png",
+    "index.html": "/index.html",
+    "main.c4da3ee6.css.map": "/static/css/main.c4da3ee6.css.map",
+    "main.ec28cf13.js.map": "/static/js/main.ec28cf13.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd76b6e5.css",
-    "static/js/main.8dd4376c.js"
+    "static/css/main.c4da3ee6.css",
+    "static/js/main.ec28cf13.js"
   ]
 }
