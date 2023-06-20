@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  color: black;
+  font-family: 'Quicksand', sans-serif, Arial;
+  font-weight: 300;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   background-color: rgb(235, 235, 240) !important;
+   overflow-y: scroll;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  color: black;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+
+}
+#preloader-none {
+  opacity: 0;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.65); /* this is a gray color */
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.911); /* darker gray on hover */
+  border-radius: 12px;
+}
+
+.cursor {
+  background-color: #191919;
+  opacity: 0.6;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+@media (max-width: 767px) {
+  .cursor{
+    display: none;
+  }
+}
