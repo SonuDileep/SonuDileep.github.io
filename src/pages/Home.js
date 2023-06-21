@@ -10,6 +10,7 @@ export function Home() {
     setIsPageVisible(!isNavExpanded); // Set page visibility based on navigation state
   }, [isNavExpanded]);
 
+
   const toggleNav = () => {
     setIsNavExpanded(!isNavExpanded);
   };
