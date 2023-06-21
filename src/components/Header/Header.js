@@ -6,6 +6,12 @@ import { NavLink } from "react-router-dom";
 import "../../pages/style.css";
 
 function Header({ toggleNav, isNavExpanded }) {
+  const handleNavLinkClick = () => {
+    if (isNavExpanded) {
+      toggleNav(); // Collapse the navbar when a navigation link is clicked
+    }
+  };
+
   return (
     <Navbar
       expanded={isNavExpanded}
@@ -28,7 +34,7 @@ function Header({ toggleNav, isNavExpanded }) {
             <NavLink
               className="nav-link"
               to="/"
-              onClick={toggleNav}
+              onClick={handleNavLinkClick}
               activeClassName="active"
             >
               Home
@@ -38,7 +44,7 @@ function Header({ toggleNav, isNavExpanded }) {
             <NavLink
               className="nav-link"
               to="/projects"
-              onClick={toggleNav}
+              onClick={handleNavLinkClick}
               activeClassName="active"
             >
               Projects
@@ -48,7 +54,7 @@ function Header({ toggleNav, isNavExpanded }) {
             <NavLink
               className="nav-link"
               to="/writings"
-              onClick={toggleNav}
+              onClick={handleNavLinkClick}
               activeClassName="active"
             >
               Writings
@@ -58,7 +64,7 @@ function Header({ toggleNav, isNavExpanded }) {
             <NavLink
               className="nav-link"
               to="/readings"
-              onClick={toggleNav}
+              onClick={handleNavLinkClick}
               activeClassName="active"
             >
               Readings
@@ -68,7 +74,7 @@ function Header({ toggleNav, isNavExpanded }) {
             <NavLink
               className="nav-link"
               to="/cv"
-              onClick={toggleNav}
+              onClick={handleNavLinkClick}
               activeClassName="active"
             >
               CV
@@ -78,7 +84,7 @@ function Header({ toggleNav, isNavExpanded }) {
             <NavLink
               className="nav-link"
               to="/whatelse"
-              onClick={toggleNav}
+              onClick={handleNavLinkClick}
               activeClassName="active"
             >
               What Else ?
