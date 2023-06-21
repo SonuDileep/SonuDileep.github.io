@@ -1,15 +1,18 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Writings from '../components/Writings/Writings'
+import React, { useState } from 'react';
+import Header from '../components/Header/Header';
+import Writings from '../components/Writings/Writings';
 
+export function Writing() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-function Writing() {
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
+
   return (
     <div>
-      <Header />
-      <Writings />
+      <Header toggleNav={toggleNav} isNavExpanded={isNavExpanded} />
+      {!isNavExpanded && <Writings />}
     </div>
-  )
+  );
 }
-
-export default Writing

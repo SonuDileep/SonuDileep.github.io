@@ -1,14 +1,19 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Projectlist from '../components/Projectlist/Projectlist'
+import React, { useState } from 'react';
+import Header from '../components/Header/Header';
+import Projectlist from '../components/Projectlist/Projectlist';
 
-function Project() {
+export function Project() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
+
   return (
     <div>
-      <Header />
-      <Projectlist />
+      <Header toggleNav={toggleNav} isNavExpanded={isNavExpanded} />
+      {!isNavExpanded && <Projectlist />}
     </div>
-  )
+  );
 }
 
-export default Project

@@ -1,15 +1,20 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Whatelse from '../components/Whatelse/Whatelse'
+import React, { useState } from 'react';
+import Header from '../components/Header/Header';
+import Whatelse from '../components/Whatelse/Whatelse';
 
+export function Whtelse() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-function About() {
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
+
   return (
     <div>
-      <Header />
-      <Whatelse />
+      <Header toggleNav={toggleNav} isNavExpanded={isNavExpanded} />
+      {!isNavExpanded && <Whatelse />}
     </div>
-  )
+  );
 }
 
-export default About
+

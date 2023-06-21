@@ -1,15 +1,19 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import Readings from '../components/Readings/Readings'
+import React, { useState } from 'react';
+import Header from '../components/Header/Header';
+import Readings from '../components/Readings/Readings';
 
+export function Reading() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-function About() {
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
+
   return (
     <div>
-      <Header />
-      <Readings />
+      <Header toggleNav={toggleNav} isNavExpanded={isNavExpanded} />
+      {!isNavExpanded && <Readings />}
     </div>
-  )
+  );
 }
 
-export default About

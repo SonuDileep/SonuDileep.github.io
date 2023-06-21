@@ -1,15 +1,18 @@
-import React from 'react'
-import Header from '../components/Header/Header'
-import CVpage from '../components/CV/CV'
+import React, { useState } from 'react';
+import Header from '../components/Header/Header';
+import CVpage from '../components/CV/CV';
 
+export function CV() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-function About() {
+  const toggleNav = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
+
   return (
     <div>
-      <Header />
-      <CVpage />
+      <Header toggleNav={toggleNav} isNavExpanded={isNavExpanded} />
+      {!isNavExpanded && <CVpage />}
     </div>
-  )
+  );
 }
-
-export default About

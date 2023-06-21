@@ -23,8 +23,7 @@
 .sticky {
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
-  /* backdrop-filter: blur(15px) !important; */
-background-color: #f8f3e8;
+  background-color: #f8f3e8;
 }
 .navbar-toggler {
   position: relative !important;
@@ -54,8 +53,8 @@ background-color: #f8f3e8;
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.1s ease-in-out !important;
+  transition: transform 0.1s ease-in-out !important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
@@ -106,12 +105,17 @@ background-color: #f8f3e8;
   border: none;
 }
 
+.homepage {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 0rem !important;
     background-color: transparent !important;
-
-
+  }
+  .homepage {
+    display: none;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -120,6 +124,8 @@ background-color: #f8f3e8;
     width: 100%;
     height: 250px;
     border-radius: 10px;
+    transition: height 0.0s ease;
+
 
   }
   .nav-link {
@@ -152,7 +158,7 @@ background-color: rgb(242, 242, 245) !important;
 
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-duration: 1.1s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
@@ -580,5 +586,4 @@ background-color: transparent;
   padding-left: 2%;
   background-clip: padding-box;
 }
-
 
