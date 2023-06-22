@@ -15,18 +15,17 @@ import {Whtelse} from './pages/Whatelse'
 function App() {
   return (
     <div className="App">
-      <Router>
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/projects" element={<Project/>} />
-            <Route path="/cv" element={<CV/>} />
-	    <Route path="/readings" element={<Reading />} />
-	    <Route path="/writings" element={<Writing />} />
-	    <Route path="/whatelse" element={<Whtelse/>} />
+          <Router basename={process.env.PUBLIC_URL}>
+	  <Routes>
+
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/projects" element={<Project/>} />
+            <Route exact path="/cv" element={<CV/>} />
+	    <Route exact path="/readings" element={<Reading />} />
+	    <Route exact path="/writings" element={<Writing />} />
+	    <Route exact path="/whatelse" element={<Whtelse/>} />
 
           </Routes>
-        </div>
       </Router>
     </div>
   );
