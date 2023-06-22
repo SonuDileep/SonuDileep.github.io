@@ -53,35 +53,33 @@ const projects = [
 ];
 
 function ProjectList() {
-  // Define your breakpoint columns
-  const breakpointColumnsObj = {
-    default: 3,
-    1100: 3,
-    700: 2,
-    500: 1
-  };
-
   return (
-    <div className="projectbackground">
-      <Container fluid className="project-section">
-        <Container>
+    <div className="aboutpagebackground">
+      <Container>
+        <Row className="textbackground">
           <Masonry
-            breakpointCols={breakpointColumnsObj}
+            breakpointCols={{
+              default: 3,
+              1100: 3,
+              700: 2,
+              500: 1
+            }}
             className="my-masonry-gridp"
-            columnClassName="my-masonry-grid_columnp">
+            columnClassName="my-masonry-grid_columnp"
+          >
             {projects.map((project, index) => (
               <ProjectCard
                 title={project.name}
                 description={project.description}
                 tools={project.tools}
-                imgPath={project.images[0]} 
+                imgPath={project.images[0]}
                 ghLink={project.link}
                 isBlog={false}
                 key={index}
               />
             ))}
           </Masonry>
-        </Container>
+        </Row>
       </Container>
     </div>
   );

@@ -45,39 +45,45 @@ const readings = {
 
 
 function ReadingList() {
-  // Define your breakpoint columns
   const breakpointColumnsObj = {
     default: 3,
     1100: 3,
     700: 2,
-    500: 1
+    500: 1,
   };
 
   return (
-    <Container className="centered-content container-width">
-      <div>
-        <p className="intro-text">Few interesting Articles, Publications and lectures useful for Computer Vision Scientists and Machine Learning Engineers</p>
-        <Masonry
-          breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column">
-          {Object.entries(readings).map(([section, readings]) => (
-            <Card className="transparent-card mb-3 dynamicBox" key={section}>
-              <Card.Header>{section}</Card.Header>
-              <ListGroup variant="flush">
-                {readings.map((reading, idx) => (
-                  <ListGroup.Item className="transparent-card" key={idx}>
-                    <a className="customLink" href={reading.link} target="_blank" rel="noopener noreferrer">
-                      {reading.name}
-                    </a>
-                  </ListGroup.Item>
-                ))}
-              </ListGroup>
-            </Card>
-          ))}
-        </Masonry>
-      </div>
-    </Container>
+    <div className='aboutpagebackground'>
+      <Container>
+        <Row className='textbackground'>
+          <Col>
+            <p className='intro-text'>
+              Few interesting Articles, Publications and lectures useful for Computer Vision Scientists and Machine
+              Learning Engineers
+            </p>
+            <Masonry
+              breakpointCols={breakpointColumnsObj}
+              className='my-masonry-grid'
+              columnClassName='my-masonry-grid_column'>
+              {Object.entries(readings).map(([section, readings]) => (
+                <Card className='transparent-card mb-3 dynamicBox' key={section}>
+                  <Card.Header>{section}</Card.Header>
+                  <ListGroup variant='flush'>
+                    {readings.map((reading, idx) => (
+                      <ListGroup.Item className='transparent-card' key={idx}>
+                        <a className='customLink' href={reading.link} target='_blank' rel='noopener noreferrer'>
+                          {reading.name}
+                        </a>
+                      </ListGroup.Item>
+                    ))}
+                  </ListGroup>
+                </Card>
+              ))}
+            </Masonry>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }
 

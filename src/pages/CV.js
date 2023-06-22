@@ -4,11 +4,26 @@ import CVpage from '../components/CV/CV';
 
 export function CV() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  const [isPageVisible, setIsPageVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const threshold = 100; // Adjust the threshold value as needed
 
   useEffect(() => {
-    setIsPageVisible(!isNavExpanded); // Set page visibility based on navigation state
-  }, [isNavExpanded]);
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setIsHeaderVisible(
+        (prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > threshold) ||
+          currentScrollPos < threshold ||
+          currentScrollPos === 0
+      );
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollPos]);
 
   const toggleNav = () => {
     setIsNavExpanded(!isNavExpanded);
@@ -16,8 +31,10 @@ export function CV() {
 
   return (
     <div>
-      <Header toggleNav={toggleNav} isNavExpanded={isNavExpanded} />
-      {isPageVisible && <CVpage />}
+      {isHeaderVisible && (
+        <Header toggleNav={toggleNav} isNavExpanded={isNavExpanded} />
+      )}
+      {!isNavExpanded && <CVpage />}
     </div>
   );
 }

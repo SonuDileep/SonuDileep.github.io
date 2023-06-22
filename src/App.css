@@ -8,7 +8,7 @@
 }
 
 body {
-  color: black;
+  color: white;
   font-family: 'Quicksand', sans-serif, Arial;
   font-weight: 300;
   font-size: 15px;
@@ -16,10 +16,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
    background-color: rgb(235, 235, 240) !important;
    overflow-y: scroll;
+
 }
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 * {
   margin: 0;
@@ -28,7 +30,7 @@ html {
 #no-scroll {
   overflow: hidden;
   height: 100vh;
-  color: black;
+  color: white;
 }
 
 #preloader {
@@ -58,12 +60,13 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: white;
+
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(128, 128, 128, 0.65); /* this is a gray color */
+  background: rgba(0, 0, 0, 0.65); /* this is a gray color */
   border-radius: 12px;
 }
 

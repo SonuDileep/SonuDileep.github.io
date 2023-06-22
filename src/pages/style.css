@@ -221,7 +221,7 @@ background-color: rgb(242, 242, 245) !important;
   margin-top: 50px;
   max-width: 550px;
   height: 400px;
-  background-image: url(../Assets/Web-designer-1024x821.webp);
+
   background-size: cover;
   background-position: center;
 } */
@@ -289,16 +289,7 @@ background-color: rgb(242, 242, 245) !important;
   background-color: rgb(242, 242, 245) !important;
   padding-top: 110px;
 }
-{/*.textbackground {
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-  background-color: transparent;
-  border-radius: 15px;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-  rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
 
-} */}
 .textbackground {
   width: 100%;
   height: 100%;
@@ -367,11 +358,6 @@ background-color: rgb(242, 242, 245) !important;
 
 /* Projectpage style */
 
-.projectbackground {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(242,242,245);
-}
 .project-section {
   padding: 10rem 3rem; 
 }
