@@ -1,8 +1,9 @@
 import './App.css';
+import React, { Suspense, lazy } from 'react';
 import { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Preloader from '../src/components/Pre'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import {Home} from './pages/Home.js'
 import {Project} from './pages/Project';
@@ -15,7 +16,7 @@ import {Whtelse} from './pages/Whatelse'
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
         <div className="App">
           <Routes>
             <Route path="/" element={<Home/>} />
@@ -27,10 +28,9 @@ function App() {
 
           </Routes>
         </div>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
-
 export default App;
 
