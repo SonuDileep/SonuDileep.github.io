@@ -13,29 +13,10 @@ import {Writing} from './pages/Writings'
 import {Whtelse} from './pages/Whatelse'
 
 
-function ScrollToTop() {
-  const location = useLocation();
-
-  React.useEffect(() => {
-    const { hash, pathname } = location;
-    if (hash) {
-      const element = document.getElementById(hash.slice(1));
-      if (element) {
-        element.scrollIntoView();
-      }
-    } else {
-      window.scrollTo(0, 0);
-    }
-  }, [location]);
-
-  return null;
-}
-
 function App() {
   return (
     <div className="App">
       <Router>
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Project />} />
@@ -48,6 +29,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
 
