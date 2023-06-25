@@ -81,20 +81,28 @@
 
 
 .nav-link {
-
-  font-size: 17px !important;
+  font-size: 16px !important;
   letter-spacing: 1px;
   font-weight: 600 !important;
   padding-right: 2rem !important;
   padding-left: 1rem !important;
-  color: rgb(100, 150, 220) !important;
+  color: rgb(100, 150, 230) !important;
+  text-decoration: none;
 
 }
-
 
 .nav-link:hover {
-  color: #191919 !important;
+  color: rgb(30, 59, 100) !important;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: underline;
+  text-decoration-color: #2c98f0;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
 }
+
+
 .resumebtn {
   margin-left: 30px;
   border-radius: 25px;
