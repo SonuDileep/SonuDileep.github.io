@@ -596,10 +596,10 @@ background-color: transparent;
 /* Custom Link for Reading Section */
 .linkr {
  /* color: rgb(0,100,245) !important; */
-  color: RoyalBlue  !important;
-  -webkit-transition: color 0.5s; 
-  -o-transition: color 0.5s;
-  transition: color 0.5s;
+
+  -webkit-transition: color 0.25s; 
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
   text-decoration: none;
 }
 
