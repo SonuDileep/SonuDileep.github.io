@@ -14,7 +14,8 @@ body {
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-color: rgb(235, 235, 240) !important;
+   { /* background-color: rgb(235, 235, 240) !important; */}
+   background-color: rgb(255, 255, 255) !important;
    overflow-y: scroll;
 
 }
