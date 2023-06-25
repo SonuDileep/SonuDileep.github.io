@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.58b39ac1.css",
-    "main.js": "/static/js/main.44c60258.js",
+    "main.css": "/static/css/main.35fbf8e5.css",
+    "main.js": "/static/js/main.0f468be7.js",
     "static/media/WP_2.png": "/static/media/WP_2.447fbdaf9d29db5ffd42.png",
     "static/media/WP_1.png": "/static/media/WP_1.027b8f66e5acc3ddaa91.png",
     "static/media/sonu.JPG": "/static/media/sonu.c8037c8525e9e8d7b07c.JPG",
-    "static/media/Charlestown-Pizza.png": "/static/media/Charlestown-Pizza.b014158f9b26c5b5b0e9.png",
-    "static/media/Gridlinesbuilders.png": "/static/media/Gridlinesbuilders.b1ae9a07030baae69f63.png",
     "static/media/ML_1.png": "/static/media/ML_1.2d65a442852a778767d6.png",
     "static/media/RT_1.png": "/static/media/RT_1.ddf9f3c6c06c3018a617.png",
     "static/media/KL_12.png": "/static/media/KL_12.6277f1f462afc135b44c.png",
     "static/media/Quicksand-VariableFont_wght.ttf": "/static/media/Quicksand-VariableFont_wght.cf52df73d8529b4815ed.ttf",
     "static/media/FA_1.png": "/static/media/FA_1.91157e4814d5687e740d.png",
-    "static/media/todolist.png": "/static/media/todolist.13858f78acbb5bec224e.png",
     "static/media/windblade.png": "/static/media/windblade.ee76d166e0f27ec8018d.png",
     "index.html": "/index.html",
-    "main.58b39ac1.css.map": "/static/css/main.58b39ac1.css.map",
-    "main.44c60258.js.map": "/static/js/main.44c60258.js.map"
+    "main.35fbf8e5.css.map": "/static/css/main.35fbf8e5.css.map",
+    "main.0f468be7.js.map": "/static/js/main.0f468be7.js.map"
   },
   "entrypoints": [
-    "static/css/main.58b39ac1.css",
-    "static/js/main.44c60258.js"
+    "static/css/main.35fbf8e5.css",
+    "static/js/main.0f468be7.js"
   ]
 }
