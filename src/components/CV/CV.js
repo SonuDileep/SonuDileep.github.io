@@ -79,7 +79,35 @@ function CVPage() {
       <Container>
         <Row className='textbackground'>
           <Col md={12}>
-            <h3 className='aboutmetext'>Work Experience</h3>
+
+<h3 className='aboutmetext mb-3 mt-4'>Education</h3>
+<Card className="transparent-card mb-3 dynamicBox">
+  <Card.Body>
+    <ListGroup variant="flush">
+      {education.map((edu, index) => (
+        <ListGroup.Item className="transparent-card" key={index}>
+          {edu}
+        </ListGroup.Item>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
+
+<h3 className='aboutmetext mb-3 mt-4'>Skills</h3>
+<Card className="transparent-card mb-3 dynamicBox">
+  <Card.Body>
+    <ListGroup variant="flush">
+      {skills.map((skill, index) => (
+        <ListGroup.Item className="transparent-card" key={index}>
+          {skill}
+        </ListGroup.Item>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
+
+
+            <h3 className='aboutmetext mb-3 mt-4'>Work Experience</h3>
             {workExperience.map((job, index) => (
               <Card className="transparent-card mb-3 dynamicBox" key={index}>
                 <Card.Header>{job.title}</Card.Header>
@@ -93,44 +121,19 @@ function CVPage() {
               </Card>
             ))}
 
-            <h3 className='aboutmetext'>Education</h3>
-            <Card className="transparent-card mb-3 dynamicBox">
-              <Card.Header>
-                <ListGroup variant="flush">
-                  {education.map((edu, index) => (
-                    <ListGroup.Item className="transparent-card" key={index}>
-                      {edu}
-                    </ListGroup.Item>
-                  ))}
-                </ListGroup>
-              </Card.Header>
-            </Card>
 
-            <h3 className='aboutmetext'>Skills</h3>
-            <Card className="transparent-card mb-3 dynamicBox">
-              <Card.Header>
-                <ListGroup variant="flush">
-                  {skills.map((skill, index) => (
-                    <ListGroup.Item className="transparent-card" key={index}>
-                      {skill}
-                    </ListGroup.Item>
-                  ))}
-                </ListGroup>
-              </Card.Header>
-            </Card>
-
-            <h3 className='aboutmetext'>Relevant Coursework</h3>
-            <Card className="transparent-card mb-3 dynamicBox">
-              <Card.Header>
-                <ListGroup variant="flush">
-                  {relevantCoursework.map((course, index) => (
-                    <ListGroup.Item className="transparent-card" key={index}>
-                      {course}
-                    </ListGroup.Item>
-                  ))}
-                </ListGroup>
-              </Card.Header>
-            </Card>
+            	<h3 className='aboutmetext mb-3 mt-4'>Relevant Coursework</h3>
+<Card className="transparent-card mb-3 dynamicBox">
+  <Card.Body>
+    <ListGroup variant="flush">
+      {relevantCoursework.map((course, index) => (
+        <ListGroup.Item className="transparent-card" key={index}>
+          {course}
+        </ListGroup.Item>
+      ))}
+    </ListGroup>
+  </Card.Body>
+</Card>
           </Col>
         </Row>
       </Container>

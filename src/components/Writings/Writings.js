@@ -18,8 +18,7 @@ function Writings() {
                   style={{ color: 'RoyalBlue', textDecoration: 'none' }}
                 >
                   Automated Identification of Oil Field Features using CNNs
-                </a>
-                @ NIPS 2020 workshop Tackling Climate Change with Machine Learning
+                </a> @ NeurIPS 2020 workshop Tackling Climate Change with Machine Learning
               </li>
               <li>
                 <a
@@ -29,8 +28,7 @@ function Writings() {
                   style={{ color: 'RoyalBlue', textDecoration: 'none' }}
                 >
                   Deep Learning for an Inventory of Small to Midsize Volcanic Edifices on Mars
-                </a>
-                @ 52nd Lunar and Planetary Science Conference (LPSC) - Poster
+                </a> @ 52nd Lunar and Planetary Science Conference (LPSC) - Poster
               </li>
               <li>
                 <a
@@ -40,8 +38,7 @@ function Writings() {
                   style={{ color: 'RoyalBlue', textDecoration: 'none' }}
                 >
                   Design, Implementation and Analysis of a Low Cost Drawing Bot for Educational Purpose
-                </a>
-                @ International Journal of Pure and Applied Mathematics
+                </a> @ International Journal of Pure and Applied Mathematics
               </li>
             </ul>
           </Col>

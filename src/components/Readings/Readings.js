@@ -81,7 +81,7 @@ function ReadingList() {
                   <ListGroup variant='flush'>
                     {readings.map((reading, idx) => (
                       <ListGroup.Item className='transparent-card' key={idx}>
-                        <a className='customLink' href={reading.link} target='_blank' rel='noopener noreferrer'>
+                        <a className='links' href={reading.link} target='_blank' rel='noopener noreferrer'>
                           {reading.name}
                         </a>
                       </ListGroup.Item>

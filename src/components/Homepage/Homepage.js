@@ -28,7 +28,7 @@ function Homepage() {
                 </Col>
 	            <Col md={7} >
                         <h3 className='aboutmetext'>Hey ! </h3>
-                        <p className='aboutdetails'>I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by Nate Blanchard. Before my PhD I completed my Masters in Computer Engineering under the guidance of Ross Beveridge. My areas of interest include Video Understanding, and AI for climate change.
+                        <p className='aboutdetails'>I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by <a href="https://sites.google.com/view/nathanieltblanchard" className="linkc">Nate Blanchard</a>. Before my PhD I completed my Masters in Computer Engineering under the guidance of <a href="https://www.cs.colostate.edu/~ross/" className="linkc">Ross Beveridge</a>. My areas of interest include Video Understanding, and AI for climate change.
                         </p>
                         
                 </Col>

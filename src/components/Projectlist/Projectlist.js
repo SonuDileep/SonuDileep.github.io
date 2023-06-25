@@ -12,9 +12,6 @@ import WP_2 from '../../Assets/WP_2.png'
 import KL_12 from '../../Assets/KL_12.png'
 import ML_1 from '../../Assets/ML_1.png'
 import wb from '../../Assets/windblade.png'
-import gridlinesbuilders from '../../Assets/Gridlinesbuilders.png'
-import charlespizza from '../../Assets/Charlestown-Pizza.png'
-import todolist from '../../Assets/todolist.png'
 
 
 const projects = [
