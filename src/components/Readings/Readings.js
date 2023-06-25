@@ -24,22 +24,32 @@ const readings = {
   "Reinforcement Learning": [
     { name: "CS234: Reinforcement Learning", link: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u" },
     { name: "DeepMind - Reinforcement Learning", link: "https://www.youtube.com/playlist?list=PLqYmG7hTraZBKeNJ-JE_eyJHZ7XgBoAyb" },
-    { name: "Deep RL Bootcamp", link: "https://www.youtube.com/playlist?list=PLAdk-EyP1ND8Dto7X5KN6sCfNjcMg3Ol6" },
   ],
   "Programming": [
-    { name: "C Programming - CMU", link: "https://www.youtube.com/playlist?list=PL601FC994BDD963E4" },
-    { name: "C++ Programming - Beginner to Beyond", link: "https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb" },
-    { name: "Python Programming Beginner to Advanced", link: "https://www.youtube.com/playlist?list=PL1FgJUcJJ03sm4WuVCPMbTFKNQ0k5Zx3y" },
-    { name: "Introduction to Algorithms", link: "https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb" },
+  { name: "C++ tutorials", link: "https://www.learncpp.com/" },
+  { name: "Introduction to Algorithms - MIT", link: "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/index.htm" },
+  { name: "Data Structures", link: "https://www.youtube.com/watch?v=RBSGKlAvoiM" },
+  { name: "Advanced Algorithms - MIT", link: "https://www.youtube.com/playlist?list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf" },
+  { name: "IOS App Development Lecture - Stanford", link: "https://www.youtube.com/playlist?list=PLpGHT1n4-mAsxuRxVPv7kj4-dQYoC3VVu" }
   ],
   "Math": [
-    { name: "Introduction to Linear Algebra", link: "https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C" },
-    { name: "Differential Equations", link: "https://www.youtube.com/playlist?list=PLUl4u3cNGP63oTpyxCMLKt_JmB0WtSZfG" },
-    { name: "Probability and Statistics", link: "https://www.youtube.com/playlist?list=PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0" },
+  { name: "Introduction to Bayesian Image Analysis", link: "https://kmh-lanl.hansonhub.com/publications/medim93.pdf" },
+  { name: "A great introduction to Probabilistic Graphical Modeling", link: "https://ermongroup.github.io/cs228-notes/" },
+  { name: "Properties of Expectations", link: "https://www3.nd.edu/~rwilliam/stats1/x12.pdf" },
+  { name: "Linear Algebra basics and SVD, PCA, KLT, CCA", link: "https://www.ece.rutgers.edu/~orfanidi/ece525/svd.pdf" },
+  { name: "Linear Algebra Lecture - MIT", link: "https://www.youtube.com/playlist?list=PLE7DDD91010BC51F8" },
+  { name: "Monte Carlo Simulation", link: "https://www.youtube.com/watch?v=OgO1gpXSUzU&t=2514s" },
   ],
   "Other": [
-    { name: "Standford Seminar - Tech Talks", link: "https://www.youtube.com/playlist?list=PL94E35692EB9D36F3" },
-    { name: "DeepMind - The Podcast", link: "https://www.youtube.com/playlist?list=PLqYmG7hTraZC3rIGRgI8rTdMjcTLoTgRH" },
+  { name: "How to build OpenCV with CUDA on Windows ?", link: "https://jamesbowley.co.uk/accelerate-opencv-4-2-0-build-with-cuda-and-python-bindings/" },
+  { name: "Transformers Explanation", link: "http://jalammar.github.io/illustrated-transformer/" },
+  { name: "Self Attention Explained", link: "https://stats.stackexchange.com/questions/421935/what-exactly-are-keys-queries-and-values-in-attention-mechanisms" },
+  { name: "Homogenous Coordinates", link: "https://www.tomdalling.com/blog/modern-opengl/explaining-homogenous-coordinates-and-projective-geometry/" },
+  { name: "Non-Manifold Mesh", link: "https://sinestesia.co/blog/tutorials/non-manifold-meshes-and-how-to-fix-them/" },
+  { name: "Attention Mechanism", link: "https://dmol.pub/dl/attention.html" },
+  { name: "Attention Mask", link: "https://medium.com/mlearning-ai/how-do-self-attention-masks-work-72ed9382510f" },
+  { name: "Transformer Circuits", link: "https://transformer-circuits.pub/2021/framework/index.html" },
+  { name: "Circuits and more !", link: "http://colah.github.io" },
   ],
 };
 

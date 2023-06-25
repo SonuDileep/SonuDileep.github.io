@@ -82,12 +82,12 @@
 
 .nav-link {
 
-  font-size: 16px !important;
+  font-size: 17px !important;
   letter-spacing: 1px;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   padding-right: 2rem !important;
   padding-left: 1rem !important;
-  color: rgb(50, 100, 150) !important;
+  color: rgb(100, 150, 220) !important;
 
 }
 
@@ -217,31 +217,6 @@ background-color: rgb(242, 242, 245) !important;
   font-weight: 300 !important;
   letter-spacing: 0.75px !important;
 }
-/*.imagedeveloper {
-  margin-top: 50px;
-  max-width: 550px;
-  height: 400px;
-
-  background-size: cover;
-  background-position: center;
-} */
-.socailmediabtn {
-  margin-top: 2rem;
-  width: 90px;
-  height: 45px;
-  background-color: transparent;
-  border: none;
-  border-radius: 15px;
-}
-.socailmediabtn:hover {
-  background-color: antiquewhite;
-
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
-  opacity: 0.6;
-}
-.icon {
-  font-size: 30px;
-}
 
 @media (max-width: 767px) {
   .homepagebackground {
@@ -338,13 +313,37 @@ background-color: rgb(242, 242, 245) !important;
   transition: 5ms;
   color: #e8e8e8;
 }
+
+/*Profile Diplay Pic */
 .webimage {
-  max-width: 500px;
-  height: 350px;
-  background-image: url(../Assets/web-removebg-preview.png);
+  max-width: 210px;
+  height: 210px;
+  background-image: url(../images/sonu.JPG);
   background-size: cover;
   background-position: center;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto; 
+  margin-bottom: 20px;
 }
+
+/* Home Page icons */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.icon {
+  color: rgb(100, 150, 220);
+  font-size: 24px; 
+}
+
+.icon:hover {
+  color: rgb(0, 50, 100); /* Change the hover color to your desired color */
+}
+
 @media (max-width: 767px) {
   .aboutpagebackground {
     width: 100%;
