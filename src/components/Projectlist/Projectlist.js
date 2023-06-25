@@ -1,9 +1,7 @@
-import React from 'react'
-import '../../pages/style.css';
+import React, { useState } from 'react';
 import ProjectCard from "./ProjectCard";
 import { Container, Row, Col } from 'react-bootstrap'
-import Masonry from 'react-masonry-css';
-
+import { MDBAccordion, MDBAccordionItem} from 'mdb-react-ui-kit';
 
 import fa_1 from '../../Assets/FA_1.png'
 import RT_1 from '../../Assets/RT_1.png'
@@ -20,14 +18,22 @@ const projects = [
     link: 'https://github.com/SonuDileep/Face-Authentication-using-Siamese-Networks',
     description: 'Siamese Networks are one of the most popular one-shot learning algorithms. This project shows how to implement one-shot learning methods for Face authentication.',
     tools: 'Python, Keras, TensorFlow, OpenCV',
-    images: [fa_1]
+    images:       [{
+        src: fa_1,
+        style: {maxHeight: '80%', maxWidth: '400px', minWidth: '50px', minHeight: '50px'}
+      }
+    ]
   },
   {
     name: 'Wind Turbine Blade Segmentation',
     link: 'https://github.com/SonuDileep/WindTurbine-Segmentation',
     description: 'An encoder-decoder architecture based on pretrained MobileNetV2 for segmenting wind blades.',
     tools: 'Python, Keras, TensorFlow, OpenCV',
-    images: [wb]
+    images:       [{
+        src: wb,
+        style: {maxHeight: '80%', maxWidth: '500px', minWidth: '50px', minHeight: '50px'}
+      }
+    ]    
   },
   {
     name: 'Spatial Analysis of COVID-19 Impact using Deep Learning',
@@ -48,7 +54,11 @@ const projects = [
     link: 'https://github.com/SonuDileep/RayTracer',
     description: 'A raytracer program which could render photo-realistic images of 3D models using Perspective Projection and Camera modeling.',
     tools: 'C++, Eigen',
-    images: [RT_1]
+    images:       [{
+        src: RT_1,
+        style: {maxHeight: '80%', maxWidth: '500px', minWidth: '50px', minHeight: '50px'}
+      }
+    ]
   },
   {
     name: 'Explorative Analytics of an Evolving Citation Network',
@@ -69,21 +79,37 @@ const projects = [
     link: 'https://github.com/SonuDileep/Well-Site-Identification',
     description: 'This is a deep learning detection model based on YOLOv4 to find well sites in DJ Basin, Colorado. This works was part of the methane emission studies in Colorado. Trained a YOLOv4 model with 1500 well pad images and 500 site equipment images. The entire pipeline is implemented in QGIS. Model acheived an average well pad detection accuracy of 97% in DJ Basin, Colorado.',
     tools: 'Python, YOLOv4, OpenCV',
-    images: [WP_1, WP_2]
+    images:       [{
+        src: WP_1,
+        style: {maxHeight: '80%', maxWidth: '500px', minWidth: '50px', minHeight: '50px'}
+      },
+      {
+        src: WP_2,
+        style: {maxHeight: '80%', maxWidth: '500px', minWidth: '50px', minHeight: '50px'}
+      },
+    ]
   },
   {
     name: 'KL Transform for Image Compression',
     link: 'https://github.com/SonuDileep/KL-transform-for-Image-Data-Compression',
     description: 'A python implementation of Karhunen-Loeve (KL) mapping technique for image/data compression. KL is an optimal dimensionality reduction mapping technique and is based on finding the best orthonormal basis. The goal of this technique is to find the subspace where most of the information lies.',
     tools: 'Python, OpenCV',
-    images: [KL_12]
+    images:       [{
+        src: KL_12,
+        style: {maxHeight: '80%', maxWidth: '500px', minWidth: '50px', minHeight: '50px'}
+      }
+    ]
   },
   {
     name: 'Manifold Learning Based Image Classification',
     link: 'https://github.com/SonuDileep/Manifold-Learning/blob/main/Final_Project.pdf',
     description: 'Project focuses on analyzing and studying three different manifold learning techniques - Multidimensional Scaling (MDS), Isomap, Locally Linear Embedding(LLE) for image classification.',
     tools: 'Python, OpenCV',
-    images: [ML_1]
+    images:       [{
+        src: ML_1,
+        style: {maxHeight: '80%', maxWidth: '800px', minWidth: '50px', minHeight: '50px'}
+      }
+    ]
   },
   {
     name: 'Wildlife Animal Classification using VGG16',
@@ -97,38 +123,34 @@ const projects = [
     link: 'https://github.com/SonuDileep/Binary_Mask_2_Json',
     description: 'This python code helps to create a JSON file from Binary Mask Image for training a MASK-RCNN Segmentation Model',
     tools: 'Python, Numpy',
-    images: [KL_12]
+    images:       []
   },
-  // More projects can be added following the same format
 ];
 
 function ProjectList() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <div className="aboutpagebackground">
       <Container>
         <Row className="textbackground">
-          <Masonry
-            breakpointCols={{
-              default: 3,
-              1100: 3,
-              700: 2,
-              500: 1
-            }}
-            className="my-masonry-gridp"
-            columnClassName="my-masonry-grid_columnp"
-          >
-            {projects.map((project, index) => (
-              <ProjectCard
-                title={project.name}
-                description={project.description}
-                tools={project.tools}
-                imgPath={project.images[0]}
-                ghLink={project.link}
-                isBlog={false}
-                key={index}
-              />
-            ))}
-          </Masonry>
+          <Col md={12}>
+            <MDBAccordion className="accordion-borderless">
+              {projects.map((project, index) => (
+                <MDBAccordionItem
+                  key={index}
+                  collapseId={`collapse${index}`}
+                  headerTitle={project.name}
+                  onClick={() => setSelectedProject((prevIndex) => (prevIndex === index ? null : index))}
+                >
+                  {selectedProject === index && (
+                      <ProjectCard project={projects[index]} />
+
+                  )}
+                </MDBAccordionItem>
+              ))}
+            </MDBAccordion>
+          </Col>
         </Row>
       </Container>
     </div>
@@ -136,3 +158,9 @@ function ProjectList() {
 }
 
 export default ProjectList;
+
+
+
+
+
+

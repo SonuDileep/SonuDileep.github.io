@@ -1,43 +1,27 @@
-import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import React, { useState } from "react";
+import ListGroup from "react-bootstrap/ListGroup";
 
-
-
-function ProjectCard(props) {
+function ProjectCard({ project }) {
   return (
     <Card className="project-card-view">
-      {props.imgPath && <Card.Img variant="top" src={props.imgPath} alt="card-img" />}
+      {project.images[0] && <Card.Img variant="top" src={project.images[0].src} alt="card-img" style={project.images[0].style} />}
       <Card.Body>
-      <Card.Title as="a" href={props.ghLink} className="linkc">
-          {props.title}
+        <Card.Title as="a" href={project.link} className="linkc">
+          {project.name}
         </Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          {project.description}
         </Card.Text>
-        <Card.Text style={{ textAlign: "justify"  }}>
-          Tools: {props.tools}
+        <Card.Text style={{ textAlign: "justify" }}>
+          Tools: {project.tools}
         </Card.Text>
-{/*        <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
-          View
-        </Button> */}
-        {"\n"}
-        {"\n"}
-
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-
-            {"Demo"}
-          </Button>
-        )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCard;
+
+

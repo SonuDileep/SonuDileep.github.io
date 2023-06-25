@@ -361,6 +361,18 @@ background-color: rgb(255, 255, 255) !important;
 
 /* Projectpage style */
 
+.project-card-container {
+  opacity: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.8s ease;
+}
+
+.project-card-container.show {
+  opacity: 1;
+  max-height: 1000px; /* Adjust this value to the desired height */
+}
+
 .project-section {
   padding: 10rem 3rem; 
 }
@@ -371,33 +383,35 @@ background-color: rgb(255, 255, 255) !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
   height: auto !important;
+   z-index: 999;
 
 }
+
+.accordion-borderless .accordion-item {
+  border: none;
+}
+
+.project-card img {
+  max-width: 100%;  /* ensures the image doesn't expand beyond its container's width */
+  height: auto;    /* maintains aspect ratio */
+}
+
 .card-text{
   font-family: 'Quicksand', sans-serif, Arial;
   font-weight: 300;
   font-size: 15px;
 }
-{/*.project-card-view {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
-  color: #191919 !important;
-  background-color: transparent !important;
-  border: transparent;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-  border-radius: 15px;
-}
-*/}
+
 .project-card-view {
   width: 100%;
   border-radius: 15px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  margin-bottom: 30px;
-background-color: transparent;
+  margin-bottom: 20px;
+  background-color: transparent;
   font-family: 'Quicksand', sans-serif, Arial;
   font-weight: 500;
+  margin-top: 10px;
+  
 }
 
 .project-card-view:hover {
@@ -409,7 +423,7 @@ background-color: transparent;
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 1.0 !important;
   border-radius: 10px !important;
 }
 .viewbtn {
