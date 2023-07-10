@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c293503e.css",
-    "main.js": "/static/js/main.dacd1955.js",
-    "static/media/WP_2.png": "/static/media/WP_2.447fbdaf9d29db5ffd42.png",
-    "static/media/WP_1.png": "/static/media/WP_1.027b8f66e5acc3ddaa91.png",
+    "main.css": "/static/css/main.d6465abc.css",
+    "main.js": "/static/js/main.bc67eb41.js",
     "static/media/sonu.JPG": "/static/media/sonu.c8037c8525e9e8d7b07c.JPG",
-    "static/media/ML_1.png": "/static/media/ML_1.2d65a442852a778767d6.png",
-    "static/media/RT_1.png": "/static/media/RT_1.ddf9f3c6c06c3018a617.png",
-    "static/media/KL_12.png": "/static/media/KL_12.6277f1f462afc135b44c.png",
-    "static/media/Quicksand-VariableFont_wght.ttf": "/static/media/Quicksand-VariableFont_wght.cf52df73d8529b4815ed.ttf",
-    "static/media/FA_1.png": "/static/media/FA_1.91157e4814d5687e740d.png",
-    "static/media/windblade.png": "/static/media/windblade.ee76d166e0f27ec8018d.png",
-    "index.html": "/index.html",
-    "main.c293503e.css.map": "/static/css/main.c293503e.css.map",
-    "main.dacd1955.js.map": "/static/js/main.dacd1955.js.map"
+    "static/media/login-image.jpg": "/static/media/login-image.21e8ba3f9dca3c346851.jpg",
+    "static/media/joshua-stannard.jpg": "/static/media/joshua-stannard.a16f281cc99a02795dd7.jpg",
+    "static/media/soroush-karimi.jpg": "/static/media/soroush-karimi.620dc9e92af6bac885fe.jpg",
+    "static/media/ilya-yakover.jpg": "/static/media/ilya-yakover.751c23c0dc4ff39577cf.jpg",
+    "static/media/federico-beccari.jpg": "/static/media/federico-beccari.ab3a31e7758f490adca7.jpg",
+    "static/media/uriel-soberanes.jpg": "/static/media/uriel-soberanes.b741f54e9ccbd071a751.jpg",
+    "static/media/profile-page.png": "/static/media/profile-page.3a626caf205d1143f192.png",
+    "static/media/landing-page.png": "/static/media/landing-page.80158096b63fb4a837e1.png",
+    "static/media/joe-gardner-2.jpg": "/static/media/joe-gardner-2.09841708956117e93a7b.jpg",
+    "static/media/kaci-baum-2.jpg": "/static/media/kaci-baum-2.9b929eea6c1ef2b4dbb4.jpg",
+    "static/media/erik-lucatero-2.jpg": "/static/media/erik-lucatero-2.d09715abe0463c58d6be.jpg",
+    "static/media/nucleo-icons.eot": "/static/media/nucleo-icons.bd42d77b9672555647d1.eot",
+    "static/media/nucleo-icons.ttf": "/static/media/nucleo-icons.4466aeec3386b965a232.ttf",
+    "static/media/nucleo-icons.woff": "/static/media/nucleo-icons.8e954b749f951b654fc6.woff",
+    "static/media/nucleo-icons.woff2": "/static/media/nucleo-icons.ec16bc4cc4526801004d.woff2",
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.c293503e.css",
-    "static/js/main.dacd1955.js"
+    "static/css/main.d6465abc.css",
+    "static/js/main.bc67eb41.js"
   ]
 }
