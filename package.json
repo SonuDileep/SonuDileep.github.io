@@ -47,7 +47,8 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "bootstrap": "^4.6.2"
+    "bootstrap": "^4.6.2",
+    "gh-pages": "^5.0.0"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
