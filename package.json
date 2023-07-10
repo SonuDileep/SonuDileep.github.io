@@ -21,7 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build":"react-scripts build && cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
@@ -56,34 +56,5 @@
   },
   "overrides": {
     "svgo": "3.0.2"
-  },
-  "description": "Paper Kit React is a free Bootstrap 4, React, React Hooks and Reactstrap UI Kit with pale colors, beautiful typography and thoughtful drawings. We've created it having paper and drawings in mind.",
-  "main": "src/assets/scss/paper-kit.scss",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/paper-kit-react.git"
-  },
-  "keywords": [
-    "react",
-    "reactstrap",
-    "reactjs",
-    "paper-kit",
-    "paper-kit-react",
-    "paper-kit-2",
-    "paper-kit2",
-    "paper-design",
-    "hook",
-    "hooks",
-    "react-hook",
-    "react-hooks",
-    "template",
-    "theme",
-    "react-template",
-    "react-theme"
-  ],
-  "author": "Creative Tim",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/paper-kit-react/issues"
   }
 }
