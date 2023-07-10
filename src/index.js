@@ -1,10 +1,50 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+/*!
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+=========================================================
+* Paper Kit React - v1.3.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-kit-react
+
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Navigate, Routes } from "react-router-dom";
+
+// styles
+import "bootstrap/scss/bootstrap.scss";
+import "assets/scss/paper-kit.scss?v=1.3.0";
+import "assets/demo/demo.css?v=1.3.0";
+// pages
+import Index from "views/Index.js";
+import CV from "views/CV.js";
+import Justme from "views/Justme.js";
+import Projects from "views/Projects.js";
+import Readings from "views/Readings.js";
+import Writings from "views/Writings.js";
+import Schedule from "views/Schedule.js";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/writings" element={<Writings />} />
+      <Route path="/readings" element={<Readings />} />
+      <Route path="/cv" element={<CV />} />
+      <Route path="/justme" element={<Justme />} />
+      <Route path="/schedule" element={<Schedule />} />
+    </Routes>
+  </BrowserRouter>
 );

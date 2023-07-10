@@ -1,51 +1,80 @@
-import React from 'react';
-import '../../pages/style.css';
-import { Container, Row, Col } from 'react-bootstrap';
+/*!
 
-function Writings() {
+=========================================================
+* Paper Kit React - v1.3.2
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-kit-react
+
+* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/main/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+/*eslint-disable*/
+import React from "react";
+import {
+  Button,
+  Label,
+  FormGroup,
+  Input,
+  NavItem,
+  NavLink,
+  Nav,
+  TabContent,
+  TabPane,
+  Container,
+  Row,
+  Col,
+} from "reactstrap";
+
+function IndexHeader() {
   return (
-    <div className='aboutpagebackground'>
-      <Container>
-        <Row className='textbackground'>
-          <Col md={7}>
-            <h4>Writings</h4>
-            <ul style={{ whiteSpace: 'nowrap' }}>
-              <li>
-                <a
-                  href="https://www.climatechange.ai/papers/neurips2020/32/paper.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: 'RoyalBlue', textDecoration: 'none' }}
-                >
-                  Automated Identification of Oil Field Features using CNNs
-                </a> @ NeurIPS 2020 workshop Tackling Climate Change with Machine Learning
-              </li>
-              <li>
-                <a
-                  href="https://www.hou.usra.edu/meetings/lpsc2021/pdf/1626.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: 'RoyalBlue', textDecoration: 'none' }}
-                >
-                  Deep Learning for an Inventory of Small to Midsize Volcanic Edifices on Mars
-                </a> @ 52nd Lunar and Planetary Science Conference (LPSC) - Poster
-              </li>
-              <li>
-                <a
-                  href="https://www.amrita.edu/publication/design-implementation-and-analysis-low-cost-drawing-bot-educational-purpose"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ color: 'RoyalBlue', textDecoration: 'none' }}
-                >
-                  Design, Implementation and Analysis of a Low Cost Drawing Bot for Educational Purpose
-                </a> @ International Journal of Pure and Applied Mathematics
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    </div>
+    <>
+      <div
+        className="section"
+        style=
+          {{ backgroundColor: 'white'}}
+      >
+          <div className='aboutpagebackground'>
+          <Container>
+          <div style={{ marginTop: '10%' }}>
+          <div className="owner">
+            <div className="avatar">
+              <img
+                alt="..."
+                className="img-circle img-no-padding img-responsive"
+                src={require("assets/images/sonu.JPG")}
+              />
+            </div>
+            <div className="name">
+              <h4 className="title">
+                Sonu Dileep <br />
+              </h4>
+              <h6 className="description">Computer Vision Scientist</h6>
+            </div>
+          </div>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="6">
+              <p style={{ textAlign: 'justify' }}>
+                Hey ! I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by <a href="https://sites.google.com/view/nathanieltblanchard" className="linkc">Nate Blanchard</a>. Before my PhD I completed my Masters in Computer Engineering under the guidance of <a href="https://www.cs.colostate.edu/~ross/" className="linkc">Ross Beveridge</a>. My areas of interest include Video Understanding, and AI for climate change.I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by <a href="https://sites.google.com/view/nathanieltblanchard" className="linkc">Nate Blanchard</a>. Before my PhD I completed my Masters in Computer Engineering under the guidance of <a href="https://www.cs.colostate.edu/~ross/" className="linkc">Ross Beveridge</a>. My areas of interest include Video Understanding, and AI for climate change. 
+              </p>
+              <br />
+            </Col>
+          </Row>
+          <br />
+          </div>
+          </Container>
+          
+          </div>
+      </div>
+    </>
   );
 }
 
-export default Writings;
+export default IndexHeader;
