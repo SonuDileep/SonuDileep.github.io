@@ -25,34 +25,52 @@ function SchedulePage() {
           <div className='aboutpagebackground'>
           <Container>
           <div style={{ marginTop: '10%' }}>
-          <div className="owner">
-            <div className="avatar">
-              <img
-                alt="..."
-                className="img-circle img-no-padding img-responsive"
-                src={require("assets/images/sonu.JPG")}
-              />
-            </div>
-            <div className="name">
-              <h4 className="title">
-                Sonu Dileep <br />
-              </h4>
-              <h6 className="description">Computer Vision Scientist</h6>
-            </div>
-          </div>
-          <Row>
-            <Col className="ml-auto mr-auto text-center" md="6">
-              <p style={{ textAlign: 'justify' }}>
-                Hey ! I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by <a href="https://sites.google.com/view/nathanieltblanchard" className="linkc">Nate Blanchard</a>. Before my PhD I completed my Masters in Computer Engineering under the guidance of <a href="https://www.cs.colostate.edu/~ross/" className="linkc">Ross Beveridge</a>. My areas of interest include Video Understanding, and AI for climate change.I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by <a href="https://sites.google.com/view/nathanieltblanchard" className="linkc">Nate Blanchard</a>. Before my PhD I completed my Masters in Computer Engineering under the guidance of <a href="https://www.cs.colostate.edu/~ross/" className="linkc">Ross Beveridge</a>. My areas of interest include Video Understanding, and AI for climate change. 
-              </p>
-              <br />
-            </Col>
-          </Row>
-          <br />
+	<div className="owner" style={{ textAlign: "left", fontSize: "20px" }}>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/Website_PPTs/Daily_Updates.pptx?d=w5523b07c52e24a0e9c10224c411fe0ec&csf=1&web=1&e=WPHxtE" className="btn-link mr-1 btn btn-success">
+	      Daily Updates
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/Website_PPTs/Satellite%20Detection.pptx?d=w3f1e7ab7dfac4b6c9d5a8195f31c59b1&csf=1&web=1&e=isn7js" className="btn-link mr-1 btn btn-success">
+	      Satellite Detection
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/Website_PPTs/C3.pptx?d=w9b5447b1d4cf4943a50e57d4a5204fb1&csf=1&web=1&e=NXYfZ2" className="btn-link mr-1 btn btn-success">
+	      C3
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/Website_PPTs/Smoke_Estimation.pptx?d=w6931015015f54aa8a7441e221607a87d&csf=1&web=1&e=rcSlYE" className="btn-link mr-1 btn btn-success">
+	      Smoke Detection
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/Website_PPTs/Long%20Video%20Understanding.pptx?d=w67b069734e8a490d9e56d384ba523690&csf=1&web=1&e=XF0Pho" className="btn-link mr-1 btn btn-success">
+	      Long Video Understanding
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/LLM%20COT.pptx?d=we250733f581f4c988369a16169ec4f94&csf=1&web=1&e=FOuK1M" className="btn-link mr-1 btn btn-success">
+	      LLM
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/Website_PPTs/Papers_TO_Read.pptx?d=w58ca69c88b7246c7820838ca06dbabbb&csf=1&web=1&e=rRwZRT" className="btn-link mr-1 btn btn-success">
+	      Papers To Read
+	    </a>
+	  </p>
+	  <p>
+	    <a href="https://colostate-my.sharepoint.com/:p:/r/personal/sonudilp_colostate_edu/Documents/Website_PPTs/Long%20Term%20Goals.pptx?d=wc2b7d178fb2f4b62809be33e06b85929&csf=1&web=1&e=reXKBA" className="btn-link mr-1 btn btn-success">
+	      Long Term Goals
+	    </a>
+	  </p>
+	</div>
+
           </div>
           </Container>
-          
-          </div>
+        </div>
       </div>
     </>
   );

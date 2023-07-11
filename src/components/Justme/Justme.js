@@ -1,18 +1,6 @@
 import React from "react";
-import {
-  Button,
-  Label,
-  FormGroup,
-  Input,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { Container } from "reactstrap";
+import CarouselComponent from "./Carousel";
 
 const hobbies = [
   {
@@ -34,6 +22,29 @@ const hobbies = [
   },
 ];
 
+const items = [
+  {
+    src: require("assets/images/RT_1.jpg"),
+    altText: "Somewhere",
+    caption: "Somewhere",
+  },
+  {
+    src: require("assets/images/RT_2.jpg"),
+    altText: "Somewhere else",
+    caption: "Somewhere else",
+  },
+  {
+    src: require("assets/images/WP_1.png"),
+    altText: "Here it is",
+    caption: "Here it is",
+  },
+  {
+    src: require("assets/images/RT_1.jpg"),
+    altText: "Somewhere",
+    caption: "Somewhere",
+  },
+];
+
 function JustmePage() {
   return (
     <>
@@ -46,7 +57,6 @@ function JustmePage() {
           <Container>
           <div style={{ marginTop: '10%' }}>
           <div className="owner" style={{ textAlign: 'left' }}>
-
 		{hobbies.map((hobby, index) => (
 			      <div key={index}>
 				<h4>{hobby.title}</h4>
@@ -68,7 +78,8 @@ function JustmePage() {
 				</p>
 			      </div>
 			    ))}
-
+{/*		<CarouselComponent items={items} />
+*/}
           </div>
           </div>
           </Container>

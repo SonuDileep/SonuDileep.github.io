@@ -6,7 +6,8 @@ body{
     font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
 }
 a{
-  color: $info-color;
+/*  color: $info-color; */
+    color:royalblue
 
   &:hover, &:focus{
      color: $info-states-color;
