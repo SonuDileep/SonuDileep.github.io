@@ -4,13 +4,14 @@ body{
     font-size: $font-size-base;
     font-weight: $font-weight-light;
     font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+    color:black;
 }
 a{
-/*  color: $info-color; */
-    color:royalblue
+    font-weight: 500;
+    color:#1E88E5;
 
   &:hover, &:focus{
-     color: $info-states-color;
+     color: Twitter Blue;
      text-decoration: none;
   }
 
