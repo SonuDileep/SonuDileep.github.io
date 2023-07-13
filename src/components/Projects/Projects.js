@@ -153,8 +153,8 @@ function ProjectsPage() {
           {projects.map((project, index) => (
                 <div key={index} style={{ marginBottom: '1rem', borderTop: '1px solid lightgray', paddingBottom: '1rem' }}>
                   <h3 style={{ textAlign: 'left' }}>{project.name}</h3>
-                  <p style={{ textAlign: 'justify' }}>{project.description}</p>
-                  <p style={{ textAlign: 'left' }}>Tools: {project.tools}</p>
+                  <p style={{ textAlign: 'justify',fontWeight: 400 }}>{project.description}</p>
+                  <p style={{ textAlign: 'left',fontWeight: 400  }}>Tools: {project.tools}</p>
                   {
 		  project.link.length > 5 &&
 		  <p style={{ textAlign: 'left' }}>

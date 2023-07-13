@@ -100,7 +100,7 @@ const education = [
 ];
 
 const skills = [
-  { title: 'Technical Skills', description: '2D/3D Object Detection & Tracking, Segmentation, Feature Detection, 3D Reconstruction, Structure from Motion, SLAM, GANs' },
+  { title: 'Technical Skills', description: '2D/3D Object Detection, Tracking, Segmentation, 3D Reconstruction, Structure from Motion, SLAM, GANs' },
   { title: 'Programming Language', description: 'C++, Python, MATLAB, CUDA' },
   { title: 'Libraries', description: 'OpenCV, ROS, PyTorch, TensorFlow, NumPy, SciPy, Scikit-learn, Pandas, Matplotlib, Apache Spark, Hadoop' },
   { title: 'Other tools', description: 'Arduino, Raspberry Pi, PyQt, QGIS, RVIZ, Git, SVN, Unreal Engine' },

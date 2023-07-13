@@ -4,6 +4,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
     -webkit-font-smoothing: antialiased;
     font-family: $font-family-sans-serif;
     font-weight: $font-weight-light;
+    font-weight: 400;
+    color:#36454F;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
@@ -33,12 +35,16 @@ h6, .h6{
     font-weight: $font-weight-bold;
     text-transform: uppercase;
     line-height: 1.5em;
+    font-weight: 600;
+    color:#36454F;
 }
 p{
     font-size: $font-paragraph;
     line-height: $line-height-general;
     margin-bottom: 5px;
-    color:black;
+    color:#454545;
+    font-weight: 400;
+    font-size: 1.03em;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
@@ -69,7 +75,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-transform: uppercase;
 }
 .description{
-    color: $dark-gray;
+    color: #36454F;
 }
 blockquote small{
     font-style: normal;

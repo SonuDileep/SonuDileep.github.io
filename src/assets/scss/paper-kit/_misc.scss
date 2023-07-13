@@ -4,10 +4,13 @@ body{
     font-size: $font-size-base;
     font-weight: $font-weight-light;
     font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
-    color:black;
+    color:#454545;
+    font-weight: 400;
+    font-size: 0.94em;
 }
 a{
     font-weight: 500;
+    font-size: 0.93em;
     color:#1E88E5;
 
   &:hover, &:focus{
