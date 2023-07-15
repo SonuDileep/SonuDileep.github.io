@@ -78,7 +78,7 @@ function ReadingsPage() {
            
 	 {Object.entries(readings).map(([section, readings], index) => (
                   <div key={index} style={{ marginBottom: '1rem', borderTop: '1px solid lightgray', paddingBottom: '1rem' }}>
-                    <h3 style={{ textAlign: 'left' }}>{section}</h3>
+                    <h3 style={{ textAlign: 'left', color: '#495871' }}>{section}</h3>
                     {readings.map((reading, readingIndex) => (
                       <p key={readingIndex} style={{ textAlign: 'justify' }}>
                         <a href={reading.link} target="_blank" rel="noopener noreferrer">

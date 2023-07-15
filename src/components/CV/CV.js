@@ -124,7 +124,7 @@ function CVPage() {
           <div style={{ marginTop: '10%' }}>
           <div className="owner" style={{ textAlign: 'left' }}>
 		
-		<h3 style={{ borderBottom: '1px solid lightgray', paddingBottom: '0rem',marginBottom: '0.7rem' }}>Work Experience</h3>
+		<h3 style={{ borderBottom: '1px solid lightgray', paddingBottom: '0rem',marginBottom: '0.7rem', color: '#495871'  }}>Work Experience</h3>
 		{workExperience.map((work, index) => (
 		  <div key={index} style={{ marginBottom: '0.7rem', paddingBottom: '0rem' }}>
 		    <h6>{work.title}</h6>
@@ -135,20 +135,28 @@ function CVPage() {
 		    </ul>
 		  </div>
 		))}
-		<h3 style={{ borderBottom: '1px solid lightgray', paddingBottom: '0rem',marginBottom: '0.7rem' }}>Education</h3>
+		<h3 style={{ borderBottom: '1px solid lightgray', paddingBottom: '0rem',marginBottom: '0.7rem', color: '#495871'  }}>Education</h3>
 		{education.map((edu, index) => (
 		  <p key={index}>
-		    <strong>{edu.degree}</strong> ( <span>{edu.timeFrame} )</span>
+
+                   <h6 style={{ marginRight: '0.5rem' }}>
+    {edu.degree} 
+    <span style={{
+        fontSize: '1em', 
+        fontWeight: 'normal', 
+    }}> ({edu.timeFrame})
+    </span>
+</h6>
 		  </p>
 		))}
-		<h3 style={{ borderBottom: '1px solid lightgray',paddingBottom: '0rem',marginBottom: '0.7rem' }}>Skills</h3>
+		<h3 style={{ borderBottom: '1px solid lightgray',paddingBottom: '0rem',marginBottom: '0.7rem', color: '#495871'  }}>Skills</h3>
 		{skills.map((skill, index) => (
 		  <div key={index} style={{ display: 'flex', alignItems: 'baseline' }}>
 		    <h6 style={{ marginRight: '0.5rem' }}>{skill.title}:</h6>
 		    <p style={{ marginBottom: 0 }}>{skill.description}</p>
 		  </div>
 		))}
-		<h3 style={{ borderBottom: '1px solid lightgray', paddingBottom: '0rem',marginBottom: '0.7rem'}}>Relevant Coursework</h3>
+		<h3 style={{ borderBottom: '1px solid lightgray', paddingBottom: '0rem',marginBottom: '0.7rem', color: '#495871' }}>Relevant Coursework</h3>
 		{relevantCoursework.map((course, index) => (
 		  <p key={index}>{course}</p>
 		))}

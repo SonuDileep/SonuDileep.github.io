@@ -48,7 +48,7 @@ function WritingsPage() {
 			href={writing.href}
 			target="_blank"
 			rel="noopener noreferrer"
-			style={{ color: 'Magic Blue', textDecoration: 'none', fontSize: '14px'  }}
+			style={{ color: 'Magic Blue', textDecoration: 'none', fontSize: '1.00em'  }}
 		      >
 			{writing.title}
 		      </a> 
