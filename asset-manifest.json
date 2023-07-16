@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b791924d.css",
-    "main.js": "/static/js/main.07f57be3.js",
+    "main.js": "/static/js/main.14469a38.js",
     "static/media/WP_2.png": "/static/media/WP_2.447fbdaf9d29db5ffd42.png",
     "static/media/WP_1.png": "/static/media/WP_1.027b8f66e5acc3ddaa91.png",
     "static/media/sonu.JPG": "/static/media/sonu.c8037c8525e9e8d7b07c.JPG",
@@ -20,6 +20,6 @@
   },
   "entrypoints": [
     "static/css/main.b791924d.css",
-    "static/js/main.07f57be3.js"
+    "static/js/main.14469a38.js"
   ]
 }
