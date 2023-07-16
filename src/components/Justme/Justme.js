@@ -59,7 +59,7 @@ function JustmePage() {
           <div className="owner" style={{ textAlign: 'left' }}>
 		{hobbies.map((hobby, index) => (
 			      <div key={index}>
-				<h4>{hobby.title}</h4>
+				<h4 style={{ borderBottom: '1px solid lightgray',paddingBottom: '0rem',marginBottom: '0.7rem', color: '#495871'  }}>{hobby.title}</h4>
 				{Object.entries(hobby.details).map(([key, value], i) => (
 				  <p key={i}>
 				    {key} - {value}
@@ -67,8 +67,8 @@ function JustmePage() {
 				))}
 				<p align='center'>
 				  <iframe
-				    width='420'
-				    height='315'
+				    height='100%'
+				    width='25%'
 				    src={hobby.video}
 				    title={`${hobby.title} Video`}
 				    frameBorder='0'

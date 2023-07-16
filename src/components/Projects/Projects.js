@@ -26,7 +26,7 @@ const projects = [
   {
     name: 'Face Authentication using Siamese Networks',
     link: 'https://github.com/SonuDileep/Face-Authentication-using-Siamese-Networks',
-    description: 'Siamese Networks are one of the most popular one-shot learning algorithms. This project shows how to implement one-shot learning methods for Face authentication.',
+    description: 'This project uses Siamese Network architecture for one-shot learning, specifically aimed at face authentication tasks. The models are trained to identify individuals by learning and recognizing unique facial patterns. The project offers a comprehensive understanding of the implementation details, thus demonstrating the practical application of one-shot learning methods in real-world scenarios.',
     tools: 'Python, Keras, TensorFlow, OpenCV',
     images:       [{
         src: fa_1,
@@ -37,7 +37,7 @@ const projects = [
   {
     name: 'Wind Turbine Blade Segmentation',
     link: 'https://github.com/SonuDileep/WindTurbine-Segmentation',
-    description: 'An encoder-decoder architecture based on pretrained MobileNetV2 for segmenting wind blades.',
+    description: 'This project focuses on the application of deep learning in the renewable energy sector, where it leverages a pretrained MobileNetV2 model within an encoder-decoder framework to perform wind turbine blade segmentation.  The architecture\'s purpose is to accurately identify and segment wind turbine blades from images, thus facilitating inspection and damage assessment. Some classical image processing methods using Convex Hull are applied on the output of deep learning model to improve the results and for deployment applications.',
     tools: 'Python, Keras, TensorFlow, OpenCV',
     images:       [{
         src: wb,
@@ -48,21 +48,21 @@ const projects = [
   {
     name: 'Spatial Analysis of COVID-19 Impact using Deep Learning',
     link: 'https://github.com/SonuDileep/COVID-Prediction-using-LSTM',
-    description: 'In this work three deep learning models – Stacked LSTM, Bidirectional LSTM, and Multivariate CNN are used for spatial analysis of covid spread using distributed computing. The goal is to process the massive amount of covid data to predict the covid cases for next few days.',
+    description: 'In this data-intensive project, a combination of three advanced deep learning models - Stacked LSTM, Bidirectional LSTM, and Multivariate CNN - are employed to conduct a comprehensive spatial analysis of the COVID-19 spread. The project aims at processing vast volumes of COVID-19 data to accurately predict case counts in the near future. Distributed computing techniques are used to effectively handle the large scale of the data.',
     tools: 'Python, Keras, Distributed-TensorFlow',
     images: []
   },
   {
     name: 'Detecting the Most Popular Topics from Live Twitter Message Streams',
     link: 'https://github.com/SonuDileep/Live-Twitter-Stream',
-    description: 'A program to detect the most popular topics from live twitter message streams using lossy counting algorithm with Apache Storm and Apache Zookeeper.',
+    description: 'This project serves as a real-time system, developed to analyze live Twitter message streams and identify trending topics. The project uses lossy counting algorithm in conjunction with Apache Storm and Apache Zookeeper to handle and process the live data stream effectively.',
     tools: 'Java, Apache Storm, Apache Zookeeper',
     images: []
   },
   {
     name: 'Image Rendering using Ray Tracing',
     link: 'https://github.com/SonuDileep/RayTracer',
-    description: 'A raytracer program which could render photo-realistic images of 3D models using Perspective Projection and Camera modeling.',
+    description: 'This project develops a Ray Tracer program capable of rendering photorealistic images of 3D models. It uses Perspective Projection and Camera modeling techniques to capture the 3D world in 2D images, thereby highlighting the power of ray tracing in graphics rendering.',
     tools: 'C++, Eigen',
     images:       [{
         src: RT_1,
@@ -73,21 +73,21 @@ const projects = [
   {
     name: 'Explorative Analytics of an Evolving Citation Network',
     link: 'https://github.com/SonuDileep/Explorative-Analytics-of-an-Evolving-Citation-Network-using-Apache-Spark',
-    description: 'A program to measure fundamental network properties with a citation network and investigate how they evolve using Apache Storm and Hadoop.',
+    description: 'This work investigates the fundamental properties of a citation network and how they evolve over time. It involves the utilization of Apache Storm and Hadoop for measuring the network\'s characteristics. The program provides an insightful analysis of an evolving citation network, offering valuable insights into the behavior and development patterns of such networks.',
     tools: 'Scala, Apache Spark, Apache Hadoop',
     images: []
   },
   {
     name: 'Satellite Image Annotation Plugin',
     link: 'https://github.com/SonuDileep/YOLO-Annotation-Tool-for-Satellite-Images',
-    description: 'This is a plugin developed to annotate satellite images. The plugin runs inside an open source software-QGIS. Satellite images from different sources like Google, Bing, ESRI can be used. The plugin create images and annotation files to train Yolo(v2,v3 and v4) but can also be extended for other deep learning architectures.',
+    description: 'This project involves developing a plugin for the open-source software QGIS, designed for the annotation of satellite images from various sources like Google, Bing, and ESRI. The plugin generates images and corresponding annotation files, facilitating the training of YOLO (v2, v3, and v4) models for satellite image analysis tasks',
     tools: 'Python, PyQt',
     images: []
   },
   {
     name: 'Well Site Identification from Satellite imagery',
     link: 'https://github.com/SonuDileep/Well-Site-Identification',
-    description: 'This is a deep learning detection model based on YOLOv4 to find well sites in DJ Basin, Colorado. This works was part of the methane emission studies in Colorado. Trained a YOLOv4 model with 1500 well pad images and 500 site equipment images. The entire pipeline is implemented in QGIS. Model acheived an average well pad detection accuracy of 97% in DJ Basin, Colorado.',
+    description: 'This deep learning project employs a YOLOv4 model to detect well sites in the DJ Basin, Colorado from satellite imagery. The model, trained on 1500 well pad images and 500 site equipment images, achieved a remarkable average well pad detection accuracy of 97%. This study contributes to the broader field of methane emission research in Colorado.',
     tools: 'Python, YOLOv4, OpenCV',
     images:       [{
         src: WP_1,
@@ -102,7 +102,7 @@ const projects = [
   {
     name: 'KL Transform for Image Compression',
     link: 'https://github.com/SonuDileep/KL-transform-for-Image-Data-Compression',
-    description: 'A python implementation of Karhunen-Loeve (KL) mapping technique for image/data compression. KL is an optimal dimensionality reduction mapping technique and is based on finding the best orthonormal basis. The goal of this technique is to find the subspace where most of the information lies.',
+    description: 'This Python implementation leverages the Karhunen-Loeve (KL) mapping technique for image and data compression tasks. As an optimal dimensionality reduction mapping technique, KL aims to identify the subspace where most of the data\'s information resides, thus efficiently condensing the information for storage and transmission.',
     tools: 'Python, OpenCV',
     images:       [{
         src: KL_12,
@@ -113,7 +113,7 @@ const projects = [
   {
     name: 'Manifold Learning Based Image Classification',
     link: 'https://github.com/SonuDileep/Manifold-Learning/blob/main/Final_Project.pdf',
-    description: 'Project focuses on analyzing and studying three different manifold learning techniques - Multidimensional Scaling (MDS), Isomap, Locally Linear Embedding(LLE) for image classification.',
+    description: 'This project explores the efficacy of three different manifold learning techniques - Multidimensional Scaling (MDS), Isomap, and Locally Linear Embedding (LLE) - for image classification tasks. The analysis provides a comparative perspective on these techniques, shedding light on their performance and applicability in real-world image classification scenarios.',
     tools: 'Python, OpenCV',
     images:       [{
         src: ML_1,
@@ -124,14 +124,14 @@ const projects = [
   {
     name: 'Wildlife Animal Classification using VGG16',
     link: 'https://github.com/SonuDileep/Wildlife-Image-Classification',
-    description: 'A VGG-16 architecture for wildlife animal classification using transfer learning.',
+    description: 'This project deploys a VGG-16 model to classify wildlife animal images using transfer learning.',
     tools: 'Python, Keras, TensorFlow, OpenCV, VGG16',
     images: []
   },
   {
     name: 'Binary Mask to JSON',
     link: 'https://github.com/SonuDileep/Binary_Mask_2_Json',
-    description: 'This python code helps to create a JSON file from Binary Mask Image for training a MASK-RCNN Segmentation Model',
+    description: 'This utility tool is developed in Python to generate a JSON file from a Binary Mask Image for training a MASK-RCNN Segmentation Model. ',
     tools: 'Python, Numpy',
     images:       []
   },
