@@ -67,8 +67,8 @@ function JustmePage() {
 				))}
 				<p align='center'>
 				  <iframe
-				    height='100%'
-				    width='25%'
+				    height='250'
+				    width='350'
 				    src={hobby.video}
 				    title={`${hobby.title} Video`}
 				    frameBorder='0'
