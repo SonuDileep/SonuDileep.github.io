@@ -37,52 +37,53 @@ const workExperience = [
   {
     title: 'Graduate Researcher - Computer Vision, Chevron, CO',
     responsibilities: [
-      'Computer Vision based oil and gas site monitoring system',
-      'Developed a Transformer based model to monitor the state of flare at oil and gas sites',
-      'Worked on data cleaning and annotation for training neural networks',
-      'Created a synthetic database using Unreal Engine which could emulate different flare conditions and weather',
-      'Find the Ringelmann number of smoke coming out of flare',
-      'Trained a Swin Transformer model to identify the state of flare, achieved 96% accuracy on test set'
+      'Engineered a computer vision system for monitoring oil and gas sites',
+      'Implemented a Transformer-based model for real-time monitoring of flare conditions',
+      'Worked on data cleaning and annotation processes for training neural networks',
+      'Created a synthetic database with Unreal Engine to simulate various flare conditions and weather patterns',
+      'Trained a Swin Transformer model that achieved a 96% accuracy rate on test set in identifying Ringelmann number',
+      'Developed a custom deep learning architecture with very few parameters (<300k) for real time deployment'
     ]
   },
   {
     title: 'Graduate Researcher - Data Analysis, CSU Energy Institute, CO',
     responsibilities: [
-      'Simulation model for methane and other hydrocarbons from oil and gas facilities',
-      'Worked on developing code for estimating emissions from oil and gas sites using Monte Carlo simulation',
-      'Collected and Analyzed data from multiple sources for modeling each facility',
-      'Create input sheets for model, test simulations and validate results'
+      'Worked on developing a simulation model to estimate emissions of methane and other hydrocarbons from oil and gas facilities',
+      'Devised code for estimating emissions using Monte Carlo simulation techniques',
+      'Collected and analyzed data from multiple sources to build accurate models of each facility',
+      'Created input data, performed test simulations, and validated results for the emission model'
     ]
   },
   {
     title: 'Graduate Researcher - Computer Vision, CSU Energy Institute, CO',
     responsibilities: [
-      'Computer Vision for automated identification of well pad features from satellite imagery',
-      'Developed an automated well pad and equipment detection model using CNNs for methane emission studies',
-      'Developed a python-based plugin for easy annotation of google satellite imagery using PyQt and QGIS',
-      'Worked on data cleaning and annotation',
-      'Trained a YoloV4 and achieved an average accuracy of 97% in DJ Basin, Colorado'
+      'Applied computer vision for automated identification of well pad features from satellite imagery',
+      'Built an automated well pad and equipment detection model using CNNs to aid in methane emission studies',
+      'Designed a Python-based plugin using PyQt and QGIS for seamless annotation of Google satellite imagery for training Yolo models',
+      'Performed data cleaning and annotation',
+      'Trained a YoloV4 model that achieved an average accuracy rate of 96% for detecting well pads in the DJ Basin, Colorado'
     ]
   },
   {
     title: 'Mapping Researcher Intern - Autonomous Driving, Magna International, MI',
     responsibilities: [
-      'Mapping and Localization of Self-Driving Car',
-      'Worked on data annotation to train deep learning models for identifying moving objects',
-      'Improved one of the existing feature detection algorithms for faster mapping and localization',
-      'Modified mapping algorithm to detect duplicate features based on camera pose'
+      'Worked on mapping and localization algorithm for a Self-Driving Car project',
+      'Conducted data annotation to train deep learning models for the identification of moving objects',
+      'Improved an existing feature detection algorithm for accelerated mapping and localization',
+      'Modified the existing mapping algorithm to detect duplicate features based on camera pose'
     ]
   },
   {
     title: 'Research Engineer - Humanitarian Technologies Lab, India',
     responsibilities: [
-      'Hand Gesture Based Wheelchair navigation and Autonomous Wheelchair Navigation',
-      'Responsible for writing codes for wheelchair navigation using Hand Gestures',
-      'Combined data from multiple sensors for safe navigation of wheelchair',
-      'Worked in the development of project “Autonomous Wheelchair Navigation”'
+      'Worked on the development of 2 projects: Hand gesture-based wheelchair navigation and Autonomous wheelchair navigation system',
+      'Designed software pipeline for wheelchair navigation using hand gesture data',
+      'Combined data from multiple sensors for the safe and efficient navigation of wheelchairs',
+      'Contributed to the development of the "Autonomous Wheelchair Navigation" project'
     ]
   }
 ];
+
 
 const education = [
   {
