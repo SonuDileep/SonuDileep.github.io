@@ -43,7 +43,7 @@ function HomePage() {
           <Row>
             <Col className="ml-auto mr-auto text-center" md="6">
               <p style={{ textAlign: 'justify' }}>
-                Hey ! I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by <a href="https://sites.google.com/view/nathanieltblanchard" className="linkc">Nate Blanchard</a>. Before my PhD I completed my Masters in Computer Engineering under the guidance of <a href="https://www.cs.colostate.edu/~ross/" className="linkc">Ross Beveridge</a>. My areas of interest include Video Understanding, and AI for climate change.
+                Hey! I'm Sonu, a second year CS PhD Student at Colorado State University working in the area of computer vision and AI. I am currently advised by <a href="https://sites.google.com/view/nathanieltblanchard" className="linkc">Nate Blanchard</a>. Before my PhD I completed my Masters in Computer Engineering under the guidance of <a href="https://www.cs.colostate.edu/~ross/" className="linkc">Ross Beveridge</a>. My areas of interest include Video Understanding, and AI for climate change.
               </p>
               <br />
             </Col>
@@ -51,7 +51,6 @@ function HomePage() {
           <br />
           </div>
           </Container>
-          
           </div>
       </div>
     </>
